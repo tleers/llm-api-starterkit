@@ -1,7 +1,9 @@
 # LLM-API-starterkit
 
 This repository is the most minimal implementation of an LLM API possible, focusing on making this tech accessible to coders new to LLMs & APIs.
-I do not recommend deploying the code as-is. For a more fleshed out example, take a look at https://github.com/tleers/servelm.
+I do not recommend deploying the code as-is. 
+
+For an example that is more comprehensive and integrating best practices, I will soon share https://github.com/tleers/servelm.
 
 # Quick-start
 
