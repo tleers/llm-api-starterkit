@@ -110,19 +110,3 @@ While CORS is essential for making your FastAPI API accessible from different or
 
 Please note that CORS is a browser-enforced security feature and doesn't provide security against API misuse that could occur from non-browser clients (e.g., curl, Postman, etc.).
 
-## I'm getting an error when using the local LLM
-
-### Incompatible architecture on Mac M1
-
-See https://github.com/abetlen/llama-cpp-python/issues/5 and https://gist.github.com/cedrickchee/e8d4cb0c4b1df6cc47ce8b18457ebde0
-
-You will have to build and install llama-cpp-python manually:
-```bash
-git clone https://github.com/abetlen/llama-cpp-python.git
-cd llama-cpp-python
-make
-pip install .
-```
-
-and convert the model weights.
-
