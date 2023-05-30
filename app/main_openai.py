@@ -5,8 +5,6 @@ from langchain.chains import LLMChain
 
 # FASTAPI
 app = FastAPI()
-
-# Why CORS? See README.md. You can ignore this if you are not deploying this code anywhere.
 app.add_middleware(
     CORSMiddleware, allow_origins=['*'], allow_methods=['*'], allow_headers=['*'],
 )
@@ -28,10 +26,6 @@ summarize_chain = LLMChain(
     llm=langchain_llm,
     prompt=summarize_prompt,
 )
-
-# We use async, because we are calling another API that may take a while, and we don't want to wait for this to finish necessarily and our computer resources be tied up in this function.
-# See https://fastapi.tiangolo.com/async/#in-a-hurry
-
 
 @app.post('/summarize-text')
 async def summarize_text(text: str):
