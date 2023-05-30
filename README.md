@@ -1,9 +1,8 @@
 # LLM-API-starterkit
 
-This repository is the most minimal implementation of an LLM API possible, focusing on making this tech accessible to coders new to LLMs & APIs.
-I do not recommend deploying the code as-is. 
+This repository is the most minimal implementation of an LLM API possible, focusing on making this technology accessible to coders new to LLMs & APIs. The core libraries are `langchain` & `fastapi`. 
 
-For an example that is more comprehensive and integrating best practices, I will soon share https://github.com/tleers/servelm.
+For an example that is more comprehensive and adhering to best practices, I will soon share https://github.com/tleers/servelm.
 
 # Quick-start
 
@@ -98,17 +97,3 @@ You can also try out the summarization endpoint by clicking `Try it out!`
 ## (Optional) 4. Best practices & deployment
 
 See https://github.com/tleers/servelm.
-
-# FAQ
-
-## Why CORS?
-Cross-Origin Resource Sharing (CORS) is a security measure implemented in web browsers to prevent requests to different origins (domain, scheme, or port) from being allowed by default. It's a mechanism that uses additional HTTP headers to tell browsers to give a web application running at one origin, access to selected resources from a different origin.
-
-When you create an API using FastAPI, it's common that your API (running on one origin, typically a different server or port) will be accessed from a web application (running on a different origin). By default, this kind of "cross-origin" request is blocked by the browser for security reasons, as it could potentially allow malicious web applications to make requests to an API on behalf of a user without their knowledge.
-
-To explicitly allow certain cross-origin requests to your FastAPI application, you would enable CORS, which involves setting the appropriate HTTP headers to tell browsers that certain origins are trusted and allowed to make these requests. FastAPI has a middleware for this, which you can configure to allow specific origins (websites), HTTP methods (GET, POST, etc.), headers, and whether credentials are allowed.
-
-While CORS is essential for making your FastAPI API accessible from different origins, be cautious about which origins you trust. Allowing all origins (with a wildcard '*') can expose your API to potential security risks.
-
-Please note that CORS is a browser-enforced security feature and doesn't provide security against API misuse that could occur from non-browser clients (e.g., curl, Postman, etc.).
-
