@@ -2,7 +2,9 @@
 
 This repository is the most minimal implementation of an LLM API possible, focusing on making this technology accessible to coders new to LLMs & APIs. The core libraries are `langchain` & `fastapi`. 
 
-For an example that is more comprehensive and adhering to best practices, I will soon share https://github.com/tleers/servelm.
+For an example that is more comprehensive and adhering to best practices, I will soon share more examples.
+  * Minimal guide to serverless deployment without Ops: https://github.com/tleers/minimal-serverless-llm-deployment
+  * [TODO] A comprehensive, best practices guide with Ops: https://github.com/tleers/servelm
 
 # Quick-start
 
@@ -11,8 +13,6 @@ There's three steps to starting the demo or doing development on this template.
 1. Installation of general python package requirements/dependencies
 2. Selection of LLM model & dependencies
 3. Running the FastAPI application
-
-(Optional) 4. look at other examples and include DevOps, MLOps & LLMOps best practices for robust & reproducible development that can be deployed more readily.
 
 ## 1. Installation of dependencies
 
@@ -31,7 +31,7 @@ python3 -m venv venv
 pip install -r requirements.txt
 ```
 
-Ideally, we use dependency management with `poetry` for a smoother experience (see https://github.com/tleers/servelm). We ignore this additional complexity for now.
+Ideally, we use dependency management with `poetry` for a smoother experience (see https://github.com/tleers/minimal-serverless-llm-deployment for an example). We ignore this additional complexity for now in this example.
 
 ## 2. LLM model preparation
 
@@ -94,6 +94,3 @@ You can also try out the summarization endpoint by clicking `Try it out!`
 
 ![Showing FastAPI with the Try it out button](docs/try_it_out.png)
 
-## (Optional) 4. Best practices & deployment
-
-See https://github.com/tleers/servelm.
