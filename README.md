@@ -1,5 +1,7 @@
 # LLM-API-starterkit
 
+For a step-by-step guide and more context, please look at my blog post: https://blog.timleers.com/a-stupidly-minimal-llm-api-starterkit-deploy-llm-endpoints-in-a-minute-with-langchain-and-fastapi
+
 This repository is the most minimal implementation of an LLM API possible, focusing on making this technology accessible to coders new to LLMs & APIs. The core libraries are `langchain` & `fastapi`. 
 
 For an example that is more comprehensive and adhering to best practices, I will soon share more examples.
